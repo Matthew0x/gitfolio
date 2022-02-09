@@ -23,7 +23,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          npm ci gitfolio -g
+          npm i gitfolio -g
           gitfolio build ${{ github.repository_owner }} --theme dark --sort star
 
   publish:
