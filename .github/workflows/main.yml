@@ -1,3 +1,4 @@
+name: Gitfolio-Generate
 on:
   push:
     branches: [ main ]
@@ -21,8 +22,9 @@ jobs:
           node-version: 16.x 
 
       - name: Install dependencies
-      - run: npm ci gitfolio -g
-      - run: gitfolio build ${{ github.repository_owner }} --theme dark --sort star
+        run: |
+          npm ci gitfolio -g
+          gitfolio build ${{ github.repository_owner }} --theme dark --sort star
 
   publish:
     runs-on: ubuntu-latest
