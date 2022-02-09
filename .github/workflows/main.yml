@@ -12,7 +12,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
-          repository: ${{ github.repository_owner }}/${{ github.repository}}
+          repository: ${{ github.repository}}
           branches:  main
           ref: main
 
@@ -31,5 +31,5 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
-        repository: ${{ github.repository_owner }}/${{ github.repository}}
+        repository: ${{ github.repository}}
         ref: gh-pages
