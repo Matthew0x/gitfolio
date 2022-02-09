@@ -14,7 +14,6 @@ jobs:
       - uses: actions/checkout@v2
         with:
           repository: ${{ github.repository}}
-          branches:  main
           ref: main
 
       - name: Use Node.js ${{ matrix.node-version }}
